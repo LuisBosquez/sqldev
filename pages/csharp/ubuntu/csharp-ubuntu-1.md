@@ -16,20 +16,20 @@ redirect_from:
 
 ## Step 1.2 Install .NET Core 
 
-If you already have .NET Core installed on your machine, skip this step. Install Homebrew, OpenSSL, and .NET Core using the following commands. 
+If you already have .NET Core installed on your machine, skip this step. Otherwise, install it using the following commands.
 
 ```terminal
 sudo sh -c 'echo "deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/dotnet-release/ xenial main" > /etc/apt/sources.list.d/dotnetdev.list'
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 417A0893
 sudo apt-get update
-sudo apt-get install dotnet-dev-1.0.1
+sudo apt-get install dotnet-sdk-2.0.0-preview2-006497
 ```
 ```results
 Reading package lists... Done
 Building dependency tree
 Reading state information... Done
 The following NEW packages will be installed:
-  dotnet-dev-1.0.1
+  dotnet-sdk-2.0.0-preview2-006497
 0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
 ...
 This software may collect information about you and your use of the software, and send that to Microsoft.

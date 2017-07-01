@@ -1,13 +1,11 @@
 Note: To ensure optimal performance of SQL Server, your machine should have at least 4 GB of memory.
 If you need to get Ubuntu, check out the Ubuntu Downloads website.
 
-1. Register the Microsoft Linux repositories and add they keys
+1. Register the Microsoft Linux repositories and add their keys
 
     ```terminal
-    sudo su
-    curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
-    curl https://packages.microsoft.com/config/ubuntu/16.04/mssql-server.list > /etc/apt/sources.list.d/mssql-server.list
-    exit
+    curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+    curl https://packages.microsoft.com/config/ubuntu/16.04/mssql-server.list | sudo tee /etc/apt/sources.list.d/mssql-server.list
     ```
 
 2. Install SQL Server
@@ -47,4 +45,4 @@ If you need to get Ubuntu, check out the Ubuntu Downloads website.
     Please confirm the password for the system administrator (SA) account:
     ```
 
-You now have SQL Server running locally on your Ubuntu machine! Check out the next section to continue installing prerequisites.
+> You now have SQL Server running locally on your Ubuntu machine! Check out the next section to continue installing prerequisites.

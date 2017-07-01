@@ -1,34 +1,31 @@
 
 # SQL Server Tutorials Documentation Contributor Guide
-You've found the GitHub repository that houses the source for the SQL Server tutorials that is published on [http://aka.ms/sqldev](http://aka.ms/sqldev).
+You've found the GitHub repository that houses the source for the SQL Server tutorials that are published on [http://aka.ms/sqldev](http://aka.ms/sqldev).
 
 
 ## Contribute to SQL Server tutorials 
-Firstly, thank you for your interest in contributing to our tutorials. We use Jekyll + Markdown for our documentation. To contribute, simply make a PR with changes in the Markdown files/new Markdown files. We will review it within 24 hours. 
+Firstly, thank you for your interest in contributing to our tutorials. We use Jekyll + Markdown for our documentation. To contribute, simply make a pull request (PR) with changes in the Markdown files or add new Markdown files. We will do our best to review changes within 24 hours. 
 
 ## Repository organization
 The content in the repository follows the standard Jekyll folder structure:
 
 ### \pages
-The *\pages* folder contains the documentation articles formatted as markdown files with an *.md* extension for each langauge + OS comibination
+The *\pages* folder contains the documentation articles formatted as markdown files with an *.md* extension for each langauge & operating system combination.
 
 ### \_includes
-This folder contains reusable content sections to be included in one or more articles. This folder also contains base html files that are used accross the site.
+This folder contains reusable content sections to be included in one or more articles. This folder also contains base HTML files that are used across the site.
 
 ### \_sass
-This folder contains the css files used the style the website
+This folder contains the CSS files used to style the website
 
 ### \assets
-This folder contains images and js scripts used in the tutorials website
+This folder contains images and js scripts used in the tutorials website.
 
-
-## Use GitHub, Git, and this repository
-For information about how to contribute, how to use the GitHub UI to contribute small changes, and how to fork and clone the repository for more significant contributions, see [Install and set up tools for authoring in GitHub](contributor-guide/tools-and-setup.md).
-
-If you install GitBash and choose to work locally, the steps for creating a new local working branch, making changes, and submitting the changes back to the main branch are listed in [Git commands for creating a new article or updating an existing article](contributor-guide/git-commands-for-master.md)
+## Use GitHub
+For information about how to contribute, how to use the GitHub UI to contribute small changes, and how to fork and clone the repository for more significant contributions, see [Authoring in GitHub](authoring-in-github.md).
 
 ### Branches
-We recommend that you create local working branches that target a specific scope of change. Each branch should be limited to a single concept/article both to streamline work flow and reduce the possibility of merge conflicts.  The following efforts are of the appropriate scope for a new branch:
+We recommend that you create local working branches that target a specific scope of change. Each branch should be limited to a single concept/article both to streamline work flow and reduce the possibility of merge conflicts. The following efforts are of the appropriate scope for a new branch:
 
 * A new article (and associated images)
 * Spelling and grammar edits on an article.
@@ -38,10 +35,19 @@ We recommend that you create local working branches that target a specific scope
 All the articles in this repository use GitHub flavored markdown.  Here's a list of resources.
 
 * [Markdown basics](https://help.github.com/articles/markdown-basics/)
-* [Printable markdown cheatsheet](./contributor-guide/media/documents/markdown-cheatsheet.pdf?raw=true)
+* [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 ## Article metadata
-Article metadata enables certain functionalities, such as author attribution, contributor attribution, breadcrumbs, article descriptions, and SEO optimizations as well as reporting Microsoft uses to evaluate the performance of the content. So, the metadata is important! [Here's the guidance for making sure your metadata is done right](contributor-guide/article-metadata.md).
+Article metadata enables certain functionalities, such as author attribution, contributor attribution, breadcrumbs, article descriptions, and SEO optimizations as well as reporting Microsoft uses to evaluate the performance of the content. So, the metadata is important! [Here's the guidance for making sure your metadata is done right](/article-metadata.md).
+
+## Labels
+
+Automated labels are assigned to pull requests to help us manage the pull request workflow and to help let you know what's going on with your pull request:
+
+* Contribution License Agreement related
+  * cla-not-required: The change is relatively minor and does not require that you sign a CLA.
+  * cla-required: The scope of the change is relatively large and requires that you sign a CLA.
+  * cla-signed: The contributor signed the CLA, so the pull request can now move forward for review.
 
 ## Microsoft Open Source Code of Conduct
 

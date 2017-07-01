@@ -3,9 +3,7 @@ Note: To ensure optimal performance of SQL Server, your machine should have at l
 1. Register the Microsoft Linux repository
 
     ```terminal
-    sudo su
-    curl https://packages.microsoft.com/config/rhel/7/mssql-server.repo > /etc/yum.repos.d/mssql-server.repo
-    exit
+    curl https://packages.microsoft.com/config/rhel/7/mssql-server.repo | sudo tee /etc/yum.repos.d/mssql-server.repo
     ```
 
 2. Install SQL Server
@@ -34,4 +32,4 @@ Note: To ensure optimal performance of SQL Server, your machine should have at l
     Please confirm the password for the system administrator (SA) account:
     ```
 
-You now have SQL Server running locally on your RHEL machine! Check out the next section to continue installing prerequisites.
+> You now have SQL Server running locally on your RHEL machine! Check out the next section to continue installing prerequisites.
